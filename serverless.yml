@@ -1,0 +1,27 @@
+frameworkVersion: '3'
+configValidationMode: error
+useDotenv: true
+
+org: ashleyjackson
+app: ajs-toolbox
+service: ajs-toolbox
+
+provider:
+  name: aws
+  architecture: x86_64
+  region: ap-southeast-2
+  runtime: nodejs18.x
+  memorySize: 128
+
+functions:
+  hello:
+    handler: src/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+
+  
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
