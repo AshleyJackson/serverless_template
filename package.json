@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "sls offline start",
+    "dev": "sls offline start --reloadHandler",
     "start": "sls deploy"
   },
   "devDependencies": {
