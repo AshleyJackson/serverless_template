@@ -12,6 +12,7 @@ provider:
   region: ap-southeast-2
   runtime: nodejs18.x
   memorySize: 128
+  timeout: 10
 
 functions:
   hello:
