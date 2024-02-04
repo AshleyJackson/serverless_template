@@ -1,4 +1,4 @@
-name: serverkess deploy
+name: serverless deploy
 
 on:
   push:
