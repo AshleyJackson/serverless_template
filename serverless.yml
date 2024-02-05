@@ -6,6 +6,11 @@ org: ashleyjackson
 app: ajs-toolbox
 service: ajs-toolbox
 
+package: 
+  individually: true
+  patterns:
+    - '!node_modules/**'
+
 provider:
   name: aws
   architecture: x86_64
@@ -21,7 +26,6 @@ functions:
       - http:
           path: hello
           method: get
-
   
 plugins:
   - serverless-offline
